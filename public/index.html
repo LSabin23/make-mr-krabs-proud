@@ -44,4 +44,18 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="js/index.js"></script>
 </body>
+  <!-- This script should be at the bottom of the file! -->
+  <script type="text/javascript">
+    (function() {
+      // "in" is checking to see if the navigator has the serviceWorker property
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .then(() => console.log('Service Worker registered successfully.'))
+          .catch(error =>
+            console.log('Service Worker registration failed:', error))
+      }
+      // open and close parentheses below is invoking this function after it's declared
+    })()
+  </script>
 </html>
