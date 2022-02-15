@@ -4,8 +4,9 @@ const CACHE_NAME = APP_PREFIX + VERSION
 
 // list of routes to save
 const FILES_TO_CACHE = [
+  '/',
   '/index.html',
-  // '/manifest.json',
+  '/manifest.json',
   '/js/index.js',
   '/css/styles.css',
   '/icons/icon-72x72.png',
