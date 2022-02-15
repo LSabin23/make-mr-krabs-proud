@@ -41,6 +41,8 @@ function saveRecord (record) {
 
   // add record to your store with add method
   budgetObjectStore.add(record)
+
+  alert('Transaction saved.')
 }
 
 function uploadBudgetItem () {
